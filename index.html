@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Use essa referencia para cores, copie formas tambem */
+        /* https://tailwindcss.com/docs/customizing-colors */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto";
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #fbfbfa;
+            width: 10%;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+     
+
+        .menu-item {
+            margin-bottom: 10px;
+            margin-left: 5px;
+            background-color: #0d9488;
+         width: 150px;
+         padding: 5px;
+         border-radius: 7px;
+        }
+        .menu-item  a {
+            color: #f2f2f2;
+            text-decoration: none;
+         
+        }
+        .menu-item:hover {
+            opacity: 0.5;
+        }
+        .content {
+            margin-left: 20%;
+            padding: 20px;
+        }
+        .container-img {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+
+        }
+        /* Adicionei essa animaca para ficar maior a imagem */
+        .zoom {
+            transition: transform .2s; 
+
+        }
+        .zoom:hover{
+            transform: scale(1.2);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="menu">
+                <!-- items do menu -->
+                <li class="menu-item">
+                    <a href="#logica">
+                        LÓGICA DE PROGRAMAÇÃO
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#variaveis">
+                        Variáveis
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#tiposDocumentos">
+                        Tipos de dados
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="entrada-usuario">
+                        Entrada do usuário
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="operadores">
+                        Operadores
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="estruturaDecisao">
+                        Estrutura de Decisão
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="content">
+            <!-- Adicione uma section para cada item do MENU -->
+            <section>
+                <h2>LÓGICA DE PROGRAMAÇÃO</h2>
+                <p>
+                    A programação define a ação de um sistema da informação, então deve ser realizada de forma criteriosa e detalhada, pois na prática um computador ou uma Inteligência artificial são como uma folha em branco onde o que você trouxer a ela vai determinar o seu sentido.
+
+                </p>
+                <p>
+                    Pense em uma receita de bolo, como você espera que uma pessoa realize a receita se tudo o que você disse foi “misture os ingredientes, bata no liquidificador, coloque no forno e está pronto”, nesse caso faltaram diversas informações, como especificar os ingredientes, onde estão os ingredientes, a ordem de mistura, o tempo no liquidificador, a temperatura do forno e etc ou acontecerá algo como isso:
+                </p>
+                <div class="container-img">
+                    <img class="zoom" src="imagens/meme.jfif" alt="">
+                </div>
+                <p>
+                    Agora, abram o bloco de notas e façam um passo a passo de uma receita de pipoca, na panela de fogão, utilizando manteiga e sal, procurando ser detalhados para que o programa ou o robô entendam. (Ferramenta Dontpad <a href="https://dontpad.com/" target="_blank">https://dontpad.com/</a>)
+                </p>
+                <p>
+                    Como vocês puderam ver, a programação tem que ser bastante detalhada e compreensível, mas também temos muita lógica por trás de tudo, são sequências de códigos para realizar uma sequência lógica de ações, então, para começarmos a exercitar a nossa lógica, iremos jogar um breve joguinho, a Torre de Hanói.
+                </p>
+                <p>
+                    Observe a imagem e, utilizando a ferramenta Dontpad, ou do bloco de notas, escreva a sequência da transferência dos 3 discos da haste A para a haste C, podendo mover apenas um disco de cada vez, mantendo a sequência de tamanhos, lembrando que um disco maior nunca pode estar sobre um disco menor, utilize a escrita (mova o disco <1> da haste <A> para a haste <C> *enter*).
+                </p>
+                <div class="container-img">
+                    <img src="imagens/image.gif" alt="" class="zoom">
+                </div>
+                <p>
+                    Agora, para continuar exercitando a nossa lógica, acessem o site Racha Cuca e vamos jogar os seguintes jogos:
+                </p>
+                <div>
+<p>
+
+    <span><a href="https://rachacuca.com.br/jogos/o-lobo-e-a-ovelha/" target="_blank">
+        O Lobo e a ovelha 
+    </a></span>
+</p>
+                <p>
+                    <span>
+                        <a href="https://rachacuca.com.br/jogos/pinguins-numa-fria/">Pinguins numa fria</a>
+                    </span>
+                </p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
